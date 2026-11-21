@@ -1,0 +1,10 @@
+fun main() {
+    val numeros = IntArray(20) { it + 1 }  // [1, 2, 3, ..., 20]
+
+    var soma = 0
+    for (i in 0 until numeros.size step 2) {
+        soma += numeros[i]
+    }
+
+    println("Soma dos valores em índices pares: $soma")
+}
