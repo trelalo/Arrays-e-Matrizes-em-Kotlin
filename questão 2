@@ -1,0 +1,11 @@
+fun main() {
+    val codigos = arrayOf("TR001", "TR002", "TR003", "TR004", "TR005")
+    val procurado = "TR003"
+
+    for (i in codigos.indices) {
+        if (codigos[i] == procurado) {
+            println("Código $procurado encontrado na posição $i")
+            break
+        }
+    }
+}
