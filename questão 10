@@ -1,0 +1,20 @@
+fun main() {
+    val nomes = arrayOf("Ana", "Bruno", "Carla")
+    val notas = arrayOf(
+        doubleArrayOf(8.0, 7.5),
+        doubleArrayOf(5.0, 6.0),
+        doubleArrayOf(9.0, 10.0)
+    )
+
+    var somaDasMedias = 0.0
+
+    for (i in nomes.indices) {
+        val media = (notas[i][0] + notas[i][1]) / 2
+        val situacao = if (media >= 7.0) "aprovado" else "reprovado"
+
+        println("${nomes[i]}: média $media - $situacao")
+        somaDasMedias += media
+    }
+
+    println("Média geral da turma: ${somaDasMedias / nomes.size}")
+}
