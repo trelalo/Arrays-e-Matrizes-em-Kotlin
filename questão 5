@@ -1,0 +1,7 @@
+fun main() {
+    val tarefas = arrayOf("Lavar a louça", "Estudar Kotlin", "Responder e-mails")
+
+    for ((indice, tarefa) in tarefas.withIndex()) {
+        println("${indice + 1}. $tarefa")
+    }
+}
