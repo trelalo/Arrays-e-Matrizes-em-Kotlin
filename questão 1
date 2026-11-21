@@ -1,0 +1,15 @@
+fun main() {
+    val numeros = intArrayOf(1, 2, 3, 4, 5, 6)
+    var inicio = 0
+    var fim = numeros.size - 1
+
+    while (inicio < fim) {
+        val temp = numeros[inicio]      // guarda o valor do começo
+        numeros[inicio] = numeros[fim]  // coloca o do fim no começo
+        numeros[fim] = temp             // coloca o guardado no fim
+        inicio++
+        fim--
+    }
+
+    println("Vetor invertido: ${numeros.joinToString(", ")}")
+}
