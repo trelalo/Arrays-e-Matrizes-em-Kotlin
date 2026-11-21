@@ -1,0 +1,16 @@
+fun main() {
+    val temperaturas = doubleArrayOf(25.0, 28.5, 30.0, 22.0, 27.0, 31.0, 26.5)
+
+    var soma = 0.0
+    for (t in temperaturas) {
+        soma += t
+    }
+    val media = soma / temperaturas.size
+    println("Média da semana: $media")
+
+    for (i in temperaturas.indices) {
+        if (temperaturas[i] > media) {
+            println("Dia (índice) $i acima da média: ${temperaturas[i]}")
+        }
+    }
+}
