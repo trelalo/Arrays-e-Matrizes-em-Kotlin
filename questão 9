@@ -1,0 +1,20 @@
+fun main() {
+    val matriz = arrayOf(
+        intArrayOf(3, 0, 8),
+        intArrayOf(7, -2, 4),
+        intArrayOf(0, 5, 1)
+    )
+
+    var soma = 0
+
+    for (linha in matriz) {
+        for (valor in linha) {
+            if (valor <= 0) {
+                continue  // pula este valor
+            }
+            soma += valor
+        }
+    }
+
+    println("Soma dos valores maiores que zero: $soma")
+}
