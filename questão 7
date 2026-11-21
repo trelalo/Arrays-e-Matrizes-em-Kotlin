@@ -1,0 +1,21 @@
+fun main() {
+    val matriz = arrayOf(
+        intArrayOf(1, 2, 3),
+        intArrayOf(4, 5, 6)
+    )
+
+    // A transposta tem 3 linhas e 2 colunas
+    val transposta = Array(3) { IntArray(2) }
+
+    for (i in 0 until 2) {
+        for (j in 0 until 3) {
+            transposta[j][i] = matriz[i][j]
+        }
+    }
+
+    println("Original:")
+    for (linha in matriz) println(linha.joinToString(" "))
+
+    println("Transposta:")
+    for (linha in transposta) println(linha.joinToString(" "))
+}
